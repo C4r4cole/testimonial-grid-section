@@ -23,6 +23,7 @@ body {
   overflow: hidden;
   font-family: "Barlow Semi Condensed";
   background-color: var(--color4);
+  font-size: 12px;
 }
 
 main {
@@ -35,30 +36,104 @@ main {
     "area4 area5 area5 area3";
 }
 
+.fiche {
+  display: flex;
+}
+
+img {
+  width: 28px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+h1 {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 0.5rem;
+  opacity: 50%;
+  font-weight: 500;
+}
+
+h3 {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+p {
+  font-size: 0.7rem;
+  opacity: 70%;
+  font-weight: 500;
+  font-style: italic;
+}
+
+section {
+  border-radius: 10px;
+}
+
+.front {
+  position: absolute;
+  z-index: 100;
+}
+
+.back {
+  z-index: 1;
+}
+
 .sec1 {
   grid-area: area1;
+  position: relative;
   background-color: var(--color1);
   color: white;
+  margin: 10px;
+  padding: 30px;
+}
+
+.sec1 img {
+  border: solid 2px hsl(264.68deg 81.58% 70.2%);
+}
+
+.sec1 .quote {
+  position: absolute;
+  width: 104px;
+  top: 0px;
+  right: 50px;
+  border: none;
+  border-radius: 0;
 }
 
 .sec2 {
   grid-area: area2;
   background-color: var(--color2);
   color: white;
+  margin: 10px;
+  padding: 30px;
 }
 
 .sec3 {
   grid-area: area4;
   background-color: white;
+  margin: 10px;
+  padding: 30px;
 }
 
 .sec4 {
   grid-area: area5;
   background-color: var(--color3);
   color: white;
+  margin: 10px;
+  padding: 30px;
+}
+
+.sec4 img {
+  border: solid 2px var(--color1);
 }
 
 .sec5 {
   grid-area: area3;
   background-color: white;
+  margin: 10px;
+  padding: 30px;
 }
