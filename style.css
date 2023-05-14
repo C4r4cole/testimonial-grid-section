@@ -137,3 +137,22 @@ section {
   margin: 10px;
   padding: 30px;
 }
+
+@media screen and (max-width: 375px) {
+  body {
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .front {
+    position: sticky;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .sec1 .quote {
+    right: 10px;
+  }
+}
